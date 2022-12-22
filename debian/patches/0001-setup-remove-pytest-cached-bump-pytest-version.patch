@@ -1,0 +1,22 @@
+From d557740c9f4a1d00e0c178d00f546f4ce8ccc72c Mon Sep 17 00:00:00 2001
+From: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
+Date: Tue, 30 May 2017 08:35:48 +0200
+Subject: setup: remove pytest-cached, bump pytest version.
+
+The pytest-cached plugin was merged into pytest in version 2.8.0. We
+don't longer need to set an explicit requirement to -cached.
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 19af01c..64875aa 100644
+--- a/setup.py
++++ b/setup.py
+@@ -12,5 +12,5 @@ if __name__ == "__main__":
+         url='http://bitbucket.org/hpk42/pytest-pep8/',
+         py_modules=['pytest_pep8'],
+         entry_points={'pytest11': ['pep8 = pytest_pep8']},
+-        install_requires=['pytest-cache', 'pytest>=2.4.2', 'pep8>=1.3', ],
++        install_requires=['pytest>=2.8.0', 'pep8>=1.3', ],
+     )

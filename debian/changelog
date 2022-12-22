@@ -1,0 +1,32 @@
+pytest-pep8 (1.0.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+  * Fix pytest 6 compatibility (Closes: #977064).
+  * Bump required version of pytest.
+
+ -- Ondřej Nový <onovy@debian.org>  Sun, 17 Jan 2021 17:29:19 +0100
+
+pytest-pep8 (1.0.6-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/watch: Use https protocol
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Andrey Rahmatullin ]
+  * Drop Python 2 support.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Mon, 12 Aug 2019 22:21:31 +0500
+
+pytest-pep8 (1.0.6-1) unstable; urgency=low
+
+  * Initial package version. (Closes: #823789)
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Tue, 20 Jun 2017 08:42:18 +0200
